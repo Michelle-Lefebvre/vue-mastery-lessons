@@ -87,3 +87,10 @@ body {
     color: #16C0B0;
     text-decoration: underline;
   }
+
+  .color-sale {
+    border: 1px solid crimson;
+    color: crimson;
+    padding: 0.3rem 0.5rem;
+    width: fit-content;
+  }
