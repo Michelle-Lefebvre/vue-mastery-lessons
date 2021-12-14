@@ -41,10 +41,6 @@ Vue.component('product', {
 
         <span v-if="sale" class="color-sale">{{ sale }}</span>
 
-        <ul>
-            <li v-for="detail in details">{{ detail }}</li>
-        </ul>
-
         <div class="color-box"
             v-for="(variant, index) in variants" :key="variant.variantId"
             :style="{ backgroundColor: variant.variantColor }"
