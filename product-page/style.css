@@ -103,3 +103,18 @@ body {
     justify-content: space-between;
     align-content: space-around;
   }
+
+  .container-review {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+  }
+
+  li {
+    width: 100vw;
+    flex-direction: column;
+    justify-content: flex-start;
+
+  }

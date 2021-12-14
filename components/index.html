@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>components</title>
     <link rel="stylesheet" href="../product-page/style.css">
 </head>
+
 <body>
     <div class="nav-bar"></div>
 
@@ -16,11 +18,11 @@
         </div>
 
         <product :premium="premium" @add-to-cart="updateCart" @remove-from-cart="removeFromCart"></product>
-
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
     <script src="main-product.js"></script>
+
 </body>
+
 </html>
