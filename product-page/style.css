@@ -36,18 +36,10 @@ body {
   .color-box {
     width: 40px;
     height: 40px;
-    margin-top: 5px;
+    margin-top: 15px;
   }
 
-  .cart {
-    margin-right: 25px;
-    float: right;
-    border: 1px solid #d8d8d8;
-    padding: 5px 20px;
-  }
-
-  button {
-    margin-top: 30px;
+  button, .cart {
     border: none;
     background-color: #1E95EA;
     color: white;
@@ -58,6 +50,12 @@ body {
 
   .disabledButton {
     background-color: #d8d8d8;
+  }
+
+  .cart {
+    background-color: white;
+    color: black;
+    text-align: right;
   }
 
   .review-form {
@@ -92,9 +90,16 @@ body {
     border: 1px solid crimson;
     color: crimson;
     padding: 0.3rem 0.5rem;
+    margin-bottom: 1rem;
     width: fit-content;
   }
 
   .stock-out {
     text-decoration: line-through;
+  }
+
+  .containerBtn {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
   }

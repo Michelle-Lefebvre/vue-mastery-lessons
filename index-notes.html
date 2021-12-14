@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue2 Notes</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: auto 3rem;
+        }
+
+  h3 {
+    margin-top: 3rem;
+    text-decoration: underline;
+  }
     </style>
 </head>
+
 <body>
     <h1>Vue 2 Beginner Path</h1>
     <h2>Intro to Vue 2</h2>
@@ -51,7 +61,8 @@
     <ul>
         <li>The v-for directive allows us to iterate over an array to display data.
         </li>
-        <li>We use an alias for the element in the array being iterated on, and specify the name of the array we are looping through. Ex: v-for="item in items"
+        <li>We use an alias for the element in the array being iterated on, and specify the name of the array we are
+            looping through. Ex: v-for="item in items"
         </li>
         <li>We can loop over an array of objects and use dot notation to display values from the objects.
         </li>
@@ -67,7 +78,8 @@
         <li>You can specify the type of event to listen for: click, mouseover and any other DOM event</li>
         <li>The v-on directive can trigger a method </li>
         <li>Triggered methods can take in arguments</li>
-        <li><mark><code>this.</code></mark> refers to the current Vue instance’s data as well as other methods declared inside the instance
+        <li><mark><code>this.</code></mark> refers to the current Vue instance’s data as well as other methods declared
+            inside the instance
         </li>
     </ul>
 
@@ -75,15 +87,32 @@
     <ul>
         <li>Data can be bound to an element’s style attribute</li>
         <li>Data can be bound to an element’s class</li>
-        <li>We can use expressions inside an element’s class binding to evaluate whether a class should appear or not</li>
-        <li>We can use expressions inside an element’s class binding to evaluate whether a class should appear or not</li>
+        <li>We can use expressions inside an element’s class binding to evaluate whether a class should appear or not
+        </li>
+        <li>We can use expressions inside an element’s class binding to evaluate whether a class should appear or not
+        </li>
         <li>You can bind an entire class object or array of classes to an element. <br>
             :class="classObject"><br>
             :class="[activeClass, errorClass]"
         </li>
     </ul>
 
+    <h3>Computed Properties - Lesson 7</h3>
+    <p>Computed Properties are properties on the Vue instance that calculate a value rather than store a value.</p>
+    <ul>
+        <li>Computed properties calculate a value rather than store a value.</li>
+        <li>Computed properties can use data from your app to calculate its values.</li>
+    </ul>
+    <p>Computed properties are cached, meaning the result is saved until its dependencies change. So when quantity
+        changes, the cache will be cleared and the **next time you access the value of inStock , it will return a fresh result, and cache that result.
+<br>
+        With that in mind, it’s more efficient to use a computed property rather than a method for an expensive operation that you don’t want to re-run every time you access it.
+<br>
+        It is also important to remember that you should not be mutating your data model from within a computed
+        property. You are merely computing values based on other values. Keep these functions pure.</p>
+
 
 
 </body>
+
 </html>
