@@ -11,11 +11,14 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: auto 3rem;
         }
+        h2, code {
+            color: #16C0B0;
+        }
 
-  h3 {
-    margin-top: 3rem;
-    text-decoration: underline;
-  }
+        h3 {
+            margin-top: 3rem;
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -23,6 +26,7 @@
     <h1>Vue 2 Beginner Path</h1>
     <h2>Course: Intro to Vue 2</h2>
     <h3>The Vue Instance - Lesson 1</h3>
+    <p>See folder product-page</p>
     <ul>
         <li>Data can be bound to HTML attributes.</li>
         <li>Syntax is v-bind: or : for short.</li>
@@ -31,6 +35,7 @@
     </ul>
 
     <h3>Attribute Binding - Lesson 2</h3>
+    <p>See folder product-page</p>
     <ul>
         <li>How to begin writing a Vue application with a Vue instance, and how to load basic data onto the webpage.
         </li>
@@ -44,6 +49,7 @@
     </ul>
 
     <h3>Conditional Rendering - Lesson 3</h3>
+    <p>See folder product-page</p>
     <ul>
         <li>There are Vue directives to conditionally render elements:
             v-if
@@ -84,6 +90,7 @@
     </ul>
 
     <h3>Class & Style Binding - Lesson 6</h3>
+    <p>See folder product-page</p>
     <ul>
         <li>Data can be bound to an element’s style attribute</li>
         <li>Data can be bound to an element’s class</li>
@@ -98,6 +105,7 @@
     </ul>
 
     <h3>Computed Properties - Lesson 7</h3>
+    <p>See folder product-page</p>
     <p>Computed Properties are properties on the Vue instance that calculate a value rather than store a value.</p>
     <ul>
         <li>Computed properties calculate a value rather than store a value.</li>
@@ -112,6 +120,7 @@
         property. You are merely computing values based on other values. Keep these functions pure.</p>
 
         <h3>Components - Lesson 8</h3>
+        <p>See folder: components-intro-2-vue</p>
         <p>Components are reusable blocks of code that can have both structure and functionality. They help create a more modular and maintainable codebase.</p>
         <ul>
             <li>Components are blocks of code, grouped together within a custom element
@@ -134,6 +143,7 @@
         <p>Props: A custom attribute for passing data into our components.</p>
 
         <h3>Communicatioin Events - Lesson 9</h3>
+        <p>See folder: components-intro-2-vue</p>
         <ul>
             <li>A component can let its parent know that an event has happened with $emit</li>
             <li>A component can use an event handler with the v-on directive ( @ for short) to listen for an event emission, which can trigger a method on the parent</li>
@@ -142,6 +152,7 @@
         </ul>
 
         <h3>Forms & v-model - Lesson 10</h3>
+        <p>See folder: components-intro-2-vue</p>
         <ul>
             <li>We can use the v-model directive to create two-way binding on form elements</li>
             <li>We can use the .number modifier to tell Vue to cast that value as a number, but there is a bug with it</li>
@@ -150,19 +161,49 @@
         </ul>
 
         <h3>Tabs - Lesson 11</h3>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <p>See folder: components-intro-2-vue</p>
+        <hr>
 
-        <h2>Course: Intro to Vue 2</h2>
-        <h3>- Lesson </h3>
+        <h2>Course: Real World Vue 2</h2>
+        <h3>Vue CLI3 - Creating our Project - Lesson 2</h3>
+        CLI stands for Command Line Interface, and the Vue CLI provides a full system for rapid Vue.js development. This means it does a lot of tedious work for us and provides us with valuable features out-of-the-box.
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>It allows us to select which libraries our project will be using Then it automatically plugs them into the project.
+            </li>
+            <li>It Configures Webpack When we build our app with Webpack, all of our JavaScript files, our CSS, and our dependencies get properly bundled together, minified and optimized.
+            </li>
+            <li>It allows us to write our HTML, CSS & JavaScript however we like We can use single-file .vue components, TypeScript, SCSS, Pug, the latest versions of ECMAScript, etc.
+            </li>
+            <li>It enables Hot Module Replacement (HMR) So when you save your project, changes appear instantly in the browser. This configuration is based on webpack-dev-server.<p></p>
+            </li>
         </ul>
+        <h4>Installing the CLI</h4>
+        <p>Installing the CLI
+            In order to use the CLI, you’ll need to have Node.js version 8 or above installed (8.10.0+ is recommended).<br>terminal:</p>
+            <h2><code>npm i -g @vue/cli</code></h2>
+
+            <h4>Creating a Vue project</h4>
+            <p>There are 2 ways to create a project</p>
+            <h2><code>vue create real-world-vue</code></h2>
+            <p>This command will start the creation of a Vue project, with the name of “real-world-vue”. Option to pick a default preset or to manually select feature choose:</p>
+            <code>Manually select features </code>
+            <p>Features needed for your project, select:</p>
+            <code>Router, Vuex and Linter / Formatter</code>
+            <p>Choose a Linter / Formatter:</p>
+            <code>ESLint + Prettier</code>
+            <p>Pick additional lint features:</p>
+            <code>Lint on save</code>
+            <p>Where do you prefer placing config for Babel, PostCSS, ESLint, etc.?</p>
+            <code>In dedicated config files</code>
+            <p>Save this as a preset for future projects? </p>
+            <code>N</code>
+            <p>If you’d like to save this as a preset, however, it will be stored in a JSON file named .vuerc in your user home directory. <br>
+
+                If you have yarn installed, you’ll be prompted to choose a package manager. I’ll choose npm. <br>
+
+                When we hit enter, our project will be created automatically.</p>
+
+
 
         <h3>- Lesson </h3>
         <ul>
